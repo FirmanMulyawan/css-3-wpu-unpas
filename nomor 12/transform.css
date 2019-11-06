@@ -1,0 +1,42 @@
+/* transform adalah properti css yang memungkinkan format visual dari elemen HTML  */
+/* transformasi 2D dan 3D */
+/* fungsi transformasi  */
+/* scale -> memperpesar/memperkecil
+rotate -> memutar
+skew -> membuat condong/miring
+translate -> mengubah posisi */
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 50px auto 0;
+  /* -webkit-transform: scale(0.5);
+  transform: sclae(0.5); */
+  transition: 3s;
+}
+/* .kotak:hover {
+  transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+  -webkit-transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+} */
+/* .kotak:hover {
+  transform: skew(30deg);
+  -webkit-transform: skewY(-30deg);
+} */
+
+/* .kotak:hover {
+  transform: scale(3) translate(50px, 100px);
+  -webkit-transform: sclae(3) translate(50px, 100px);
+} */
+.kotak:hover {
+  transform: scale(3) rotate(360deg);
+  -webkit-transform: scale(3) rotate(360deg);
+}
+/* scale (angka), scaleX(angka), scaleY(angka),
+rotate(deg), rotateX(deg), rotateY(deg), 
+skew(deg), skewX(deg), skewY(deg), 
+translate(px), translateX(px), translate(px) */

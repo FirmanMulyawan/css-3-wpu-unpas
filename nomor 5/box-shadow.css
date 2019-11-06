@@ -1,0 +1,26 @@
+div {
+  width: 300px;
+  height: 300px;
+  background-color: #39b54a;
+  margin: 80px auto;
+  /* box box-shadow: ;  */
+  /* <inset> <x-offset> <y-offset> <blur> <spread> <color>  */
+  /* - x-offset mengatur bayangan pada sumbu horizontal */
+  /* y-offset mengatur bayangan pada sumbu vertical */
+
+  /* spread adalah size bayangan (optional)*/
+
+  /* box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.75); */
+  /* box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, 0.75); */
+  /* box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.5); */
+  /* box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5),
+    -5px -5px 5px rgba(0, 0, 255, 0.5); */
+  box-shadow: 0px 0px 0px 5px red, 0 0 0 10px green, 0 0 0 15px yellow,
+    0 0 0 20px orange;
+  border-radius: 50%;
+  /* transition: 0.3s; */
+}
+div:hover {
+  box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+}

@@ -1,0 +1,54 @@
+/* properti transision memungkinkan kita dapat mengubah nilai dari property HTML secara halus   */
+/* sintaks :
+transition
+[property] <durasi> [fungsi] [delay]; */
+/* durasi bisa diisi dengan s / ms  */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 10px auto;
+  border: 5px solid black;
+}
+/* keadaan awal */
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  /* simpan property transition selalu di keadaan awal  */
+  transition: margin-left 1s;
+}
+/* keadaan akhir */
+.container:hover .kotak {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 800px;
+  background-color: royalblue;
+}
+/* 
+animatable properties
+background-color
+background-position
+background-size
+border
+color 
+filter 
+font-size 
+line-height 
+top left bottom right 
+margin padding
+width height 
+opacity 
+transform 
+word-spacing 
+letter-spacing  */
+
+/* non animatable properties 
+font-family 
+display
+position */

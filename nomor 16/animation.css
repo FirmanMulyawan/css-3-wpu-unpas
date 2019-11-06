@@ -1,0 +1,60 @@
+/* animation memiliki keyframe atau keadaan antara */
+/* untuk membuat keyframe property yang dibuat adalah  */
+/* @keyframes [name] {
+    form {
+        [property-css]
+    }
+    to {
+        [property-css]
+    }
+} */
+
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+
+  /* iteration-count defaultnya adalah 1
+  <angka> | infinite */
+  animation: animasiKotak 3s ease infinite alternate forwards;
+  /* animation-name: animasiKotak;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite; */
+
+  /* direction  */
+  /* - default = normal */
+  /* - reverse
+  - alternate 
+  -alternate-reverse */
+
+  /* fill-mode (menentukan akhir dari transisi)
+  none | forwards | backwards | both  */
+  /* forwards agar transisinya tidak loncat langsung ke posisi awal */
+
+  /* play-state  */
+  /* running (default) | paused  */
+}
+
+/* keadaan akhir  */
+/* .kotak:hover {
+  animation: animasiKotak 2s ease; 
+} */
+@keyframes animasiKotak {
+  0% {
+    width: 200px;
+  }
+  50% {
+    width: 500px;
+    height: 200px;
+  }
+  100% {
+    /* setelah 500px lebarnya kembali ke posisi semula  */
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* nilai yang bisa kita kasih ke animation:
+[name] [duration] [timing-function] [delay] 
+[iteration-count] [direction] [fill-mode] [play-state] */

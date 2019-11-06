@@ -1,0 +1,23 @@
+/* sinntaks khusus yang harus ditambahkan untuk beberapa property css3 */
+/* sintaks spesifik untuk tiap browser / vendor  */
+/* prefix adalah awalan, vendor adalah browser yang bersangkutan  */
+/* contohnya vendor prefix 
+-webkit-<properti-css3>
+(chrome, safari, opera versi terbaru)
+-moz-<properti-css3>
+(firefox)
+-ms-<properti-css3>
+(internet explorer)
+-o-<properti-css3> */
+/* (opera versi terdahulu) */
+/* kenapa harus pakai vendor-prefix karena tidak semua browser support css3 */
+body {
+  text-align: center;
+}
+img {
+  /* filter */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/* property css3 apa saja yang butuh vendor prefixes 
+kunjungi ==== shouldiprefix.com, caniuse.com*/

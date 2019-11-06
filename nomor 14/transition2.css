@@ -1,0 +1,65 @@
+/* transition:  */
+/* [property]  <durasi>  [fungsi]  [delay];   */
+/* fungsi transisi /timing function */
+/* timing function  */
+/* 
+- ease ==> default
+- ease-in
+- ease-out
+- ease-in-out
+- linear 
+- cubic-bezier (w,x,y,z) */
+
+/* ======================================================= */
+/* properti transision memungkinkan kita dapat mengubah nilai dari property HTML secara halus   */
+/* sintaks :
+transition
+[property] <durasi> [fungsi] [delay]; */
+/* durasi bisa diisi dengan s / ms  */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 10px auto;
+  border: 5px solid black;
+}
+/* keadaan awal */
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  /* simpan property transition selalu di keadaan awal  */
+  text-align: center;
+  line-height: 100px;
+  margin: 5px 0;
+}
+.kotak1 {
+  transition: all 3s ease;
+}
+.kotak2 {
+  transition: all 3s ease-in;
+}
+.kotak3 {
+  transition: all 3s ease-out;
+}
+.kotak4 {
+  transition: all 3s ease-in-out;
+}
+.kotak5 {
+  transition: all 3s linear;
+}
+.kotak6 {
+  transition: all 3s cubic-bezier(0.24, -0.35, 0.78, 1.46);
+}
+/* keadaan akhir */
+.container:hover .kotak {
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+  margin-left: 800px;
+  background-color: royalblue;
+}

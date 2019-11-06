@@ -1,0 +1,17 @@
+/* CSS 3 dibagi mejadi beberapa modul, dan tiap-tiap modulnya menambahka kemampuan / fitur yang ada di CSS2 */
+
+/* kenapa menggunakan CSS 3
+- membuat website  menjadi lebih fleksibel
+- membuat mock-up dengan cepat tanpa bantuan bahsa scripting.
+- mengurangi penggunaan gambar = kecepatan load gambar  
+/* - penggunaan selector untuk menghindari  penggunaan markup yang boros  */
+/* - ada beberapa property  yang hanya berjalan di browser tertentu  */
+
+div {
+  width: 400px;
+  height: 300px;
+  margin: 50px auto;
+  background-color: #ff9966;
+  /* agar ujungnya tumpul  */
+  border-radius: 30px;
+}
